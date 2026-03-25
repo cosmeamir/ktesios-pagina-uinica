@@ -1159,22 +1159,135 @@ section,
 
 .service-request-modal .modal-content {
   border: 0;
-  border-radius: 18px;
+  border-radius: 24px;
   overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.28);
 }
 
 .service-request-modal .modal-header {
   border: 0;
-  background: color-mix(in srgb, var(--accent-color), #fff 90%);
+  padding: 18px 24px;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--accent-color), #ffffff 82%) 0%, #f5f1e7 100%);
+}
+
+.service-request-modal .modal-title {
+  font-weight: 600;
+  color: #2d1e16;
+}
+
+.service-request-modal .btn-close {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
 }
 
 .service-request-modal .modal-body {
-  padding: clamp(14px, 2vw, 26px);
+  padding: clamp(16px, 2vw, 28px);
+  background: linear-gradient(180deg, #fff 0%, #fcfbf8 100%);
 }
 
 .service-request-modal .modal-quote-container {
+  position: relative;
   background: transparent;
   box-shadow: none;
+}
+
+.service-request-modal .modal-glow {
+  position: absolute;
+  inset: -10px;
+  background: radial-gradient(circle at 15% 20%, color-mix(in srgb, var(--accent-color), transparent 84%) 0%, transparent 45%);
+  pointer-events: none;
+}
+
+.service-request-modal .quote-content,
+.service-request-modal .quote-form {
+  position: relative;
+  z-index: 1;
+}
+
+.service-request-modal .quote-content {
+  background: #fff;
+  border: 1px solid #ece6db;
+  border-radius: 18px;
+  padding: 24px;
+  height: 100%;
+}
+
+.service-request-modal .quote-content h2,
+.service-request-modal .quote-form .form-intro h3 {
+  color: #2d1e16;
+  font-weight: 700;
+}
+
+.service-request-modal .quote-content p,
+.service-request-modal .quote-form .form-intro p {
+  color: #5f5750;
+}
+
+.service-request-modal .modal-trust-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 16px 0 18px;
+}
+
+.service-request-modal .modal-trust-badges span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #5c4536;
+  background: #f7f0e8;
+  border: 1px solid #ecdcc9;
+  padding: 7px 12px;
+  border-radius: 999px;
+}
+
+.service-request-modal .quote-content .contact-info {
+  padding-top: 4px;
+}
+
+.service-request-modal .quote-form {
+  background: #ffffff;
+  border: 1px solid #ece6db;
+  border-radius: 18px;
+  padding: 24px;
+}
+
+.service-request-modal .php-email-form .form-grid {
+  gap: 14px;
+}
+
+.service-request-modal .php-email-form input[type=text],
+.service-request-modal .php-email-form input[type=email],
+.service-request-modal .php-email-form input[type=tel],
+.service-request-modal .php-email-form select {
+  width: 100%;
+  border: 1px solid #d9cec1;
+  border-radius: 10px;
+  background: #fffcf8;
+}
+
+.service-request-modal .php-email-form input:focus,
+.service-request-modal .php-email-form select:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 0.2rem color-mix(in srgb, var(--accent-color), transparent 82%);
+}
+
+.service-request-modal .php-email-form .submit-btn {
+  width: 100%;
+  justify-content: center;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .service-request-modal .quote-content,
+  .service-request-modal .quote-form {
+    padding: 18px;
+  }
 }
 
 /*--------------------------------------------------------------
