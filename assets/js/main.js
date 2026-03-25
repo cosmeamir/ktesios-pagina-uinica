@@ -91,6 +91,16 @@
   window.addEventListener('load', toggleScrollTop);
   document.addEventListener('scroll', toggleScrollTop);
 
+
+  /**
+   * Open service request modal from CTA buttons
+   */
+  document.querySelectorAll('.service-modal-trigger').forEach((trigger) => {
+    trigger.addEventListener('click', (event) => {
+      event.preventDefault();
+    });
+  });
+
   /**
    * Animation on scroll function and init
    */
