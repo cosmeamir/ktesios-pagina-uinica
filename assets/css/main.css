@@ -1158,7 +1158,7 @@ section,
 }
 
 .service-request-modal .modal-dialog {
-  max-width: 1240px;
+  max-width: 1120px;
 }
 
 .service-request-modal .modal-content {
@@ -1191,7 +1191,7 @@ section,
 }
 
 .service-request-modal .modal-body.quote {
-  padding: 36px 38px 30px;
+  padding: 28px 30px 24px;
   background: #efefef;
 }
 
@@ -1200,27 +1200,27 @@ section,
 }
 
 .service-request-modal .quote-content {
-  padding: 26px 24px 20px 0;
+  padding: 10px 16px 8px 0;
 }
 
 .service-request-modal .quote-content h2 {
-  font-size: 56px;
+  font-size: clamp(2.1rem, 3.2vw, 3.1rem);
   line-height: 1.05;
-  margin-bottom: 26px;
+  margin-bottom: 18px;
   color: #22150e;
 }
 
 .service-request-modal .quote-content p {
   color: #444;
-  font-size: 38px;
+  font-size: clamp(1.1rem, 1.6vw, 1.35rem);
   line-height: 1.55;
-  margin-bottom: 38px;
-  max-width: 500px;
+  margin-bottom: 26px;
+  max-width: 460px;
 }
 
 .service-request-modal .quote-content .contact-detail {
-  margin-bottom: 14px;
-  font-size: 30px;
+  margin-bottom: 12px;
+  font-size: 1rem;
 }
 
 .service-request-modal .quote-content .contact-detail i {
@@ -1230,34 +1230,34 @@ section,
 
 .service-request-modal .quote-form {
   background: #f3f3f3;
-  border-radius: 4px;
-  padding: 32px 34px;
+  border-radius: 8px;
+  padding: 24px 26px;
   border: 1px solid #ededed;
 }
 
 .service-request-modal .quote-form .form-intro h3 {
-  font-size: 50px;
+  font-size: clamp(2rem, 3vw, 2.85rem);
   color: #22150e;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .service-request-modal .quote-form .form-intro p {
   color: #565656;
-  font-size: 34px;
-  margin-bottom: 28px;
+  font-size: 1.25rem;
+  margin-bottom: 20px;
   line-height: 1.5;
 }
 
 .service-request-modal .php-email-form .form-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px 22px;
+  gap: 14px 16px;
 }
 
 .service-request-modal .php-email-form .form-field label {
-  font-size: 30px;
+  font-size: 1rem;
   font-weight: 700;
-  margin-bottom: 7px;
+  margin-bottom: 6px;
   color: #1e1e1e;
 }
 
@@ -1265,13 +1265,13 @@ section,
 .service-request-modal .php-email-form input[type=email],
 .service-request-modal .php-email-form input[type=tel],
 .service-request-modal .php-email-form select {
-  height: 64px;
+  height: 52px;
   border: 1px solid #d2d2d2;
-  border-radius: 5px;
+  border-radius: 8px;
   background: #f3f3f3;
-  font-size: 32px;
+  font-size: 1.05rem;
   color: #333;
-  padding: 0 18px;
+  padding: 0 14px;
 }
 
 .service-request-modal .php-email-form input::placeholder {
@@ -1287,44 +1287,28 @@ section,
 }
 
 .service-request-modal .php-email-form .submit-btn {
-  margin-top: 28px;
-  width: 260px;
-  min-height: 62px;
+  margin-top: 18px;
+  width: 280px;
+  min-height: 56px;
   background: #d99900;
-  border-radius: 6px;
+  border-radius: 8px;
   display: inline-flex;
   justify-content: center;
-  font-size: 34px;
+  font-size: 1.25rem;
   font-weight: 700;
 }
 
 .service-request-modal .php-email-form .submit-btn i {
-  font-size: 34px;
+  font-size: 1.25rem;
 }
 
 @media (max-width: 1200px) {
-  .service-request-modal .quote-content h2,
-  .service-request-modal .quote-form .form-intro h3 {
-    font-size: 42px;
+  .service-request-modal .modal-body.quote {
+    padding: 24px;
   }
 
-  .service-request-modal .quote-content p,
-  .service-request-modal .quote-form .form-intro p {
-    font-size: 24px;
-  }
-
-  .service-request-modal .php-email-form .form-field label {
-    font-size: 21px;
-  }
-
-  .service-request-modal .php-email-form input[type=text],
-  .service-request-modal .php-email-form input[type=email],
-  .service-request-modal .php-email-form input[type=tel],
-  .service-request-modal .php-email-form select,
-  .service-request-modal .php-email-form .submit-btn,
-  .service-request-modal .php-email-form .submit-btn i,
-  .service-request-modal .quote-content .contact-detail {
-    font-size: 22px;
+  .service-request-modal .quote-form {
+    padding: 22px;
   }
 }
 
