@@ -1152,6 +1152,34 @@ section,
 }
 
 @media (max-width: 991px) {
+  .hero {
+    align-items: flex-end;
+    padding-top: 96px;
+    padding-bottom: 28px;
+  }
+
+  .hero .container .row {
+    justify-content: flex-start !important;
+  }
+
+  .hero .container .row>[class*="col-"] {
+    max-width: 100%;
+  }
+
+  .hero .hero-content {
+    text-align: left;
+  }
+
+  .hero .hero-content p {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  .hero .hero-content .hero-actions .btn {
+    margin: 0 10px 10px 0;
+  }
+
   .hero .hero-content .hero-highlights {
     display: none;
   }
