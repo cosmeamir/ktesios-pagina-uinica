@@ -1158,13 +1158,13 @@ section,
 }
 
 .service-request-modal .modal-dialog {
-  max-width: 1120px;
+  max-width: 1280px;
 }
 
 .service-request-modal .modal-content {
   border: 0;
   border-radius: 0;
-  background: #efefef;
+  background: #f5f5f5;
   box-shadow: none;
 }
 
@@ -1185,14 +1185,21 @@ section,
 }
 
 .service-request-modal .btn-close {
-  margin: 20px 22px 0 auto;
-  background-color: transparent;
-  opacity: 0.6;
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  opacity: 1;
+  z-index: 5;
 }
 
 .service-request-modal .modal-body.quote {
-  padding: 28px 30px 24px;
-  background: #efefef;
+  padding: 46px 40px;
+  background: #f5f5f5;
 }
 
 .service-request-modal .modal-quote-container {
@@ -1200,133 +1207,147 @@ section,
 }
 
 .service-request-modal .quote-content {
-  padding: 10px 16px 8px 0;
+  padding-top: 22px;
 }
 
 .service-request-modal .quote-content h2 {
-  font-size: clamp(2.1rem, 3.2vw, 3.1rem);
-  line-height: 1.05;
-  margin-bottom: 18px;
-  color: #22150e;
+  font-size: 42px;
+  line-height: 1.25;
+  font-weight: 400;
+  color: #2c1200;
+  margin-bottom: 28px;
 }
 
 .service-request-modal .quote-content p {
-  color: #444;
-  font-size: clamp(1.1rem, 1.6vw, 1.35rem);
-  line-height: 1.55;
-  margin-bottom: 26px;
-  max-width: 460px;
+  font-size: 19px;
+  line-height: 1.65;
+  color: #4d5968;
+  max-width: 470px;
+  margin-bottom: 46px;
 }
 
 .service-request-modal .quote-content .contact-detail {
-  margin-bottom: 12px;
-  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+  color: #3d4754;
+  font-size: 17px;
 }
 
 .service-request-modal .quote-content .contact-detail i {
-  color: #d99900;
-  margin-right: 10px;
+  color: #d89b10;
+  font-size: 20px;
+  width: 18px;
+  text-align: center;
+  flex-shrink: 0;
 }
 
 .service-request-modal .quote-form {
-  background: #f3f3f3;
-  border-radius: 8px;
-  padding: 24px 26px;
-  border: 1px solid #ededed;
+  background: #f8f8f8;
+  padding: 46px 50px 60px;
+  border-radius: 2px;
+  border: 1px solid #f0f0f0;
 }
 
 .service-request-modal .quote-form .form-intro h3 {
-  font-size: clamp(2rem, 3vw, 2.85rem);
-  color: #22150e;
-  margin-bottom: 12px;
+  font-size: 32px;
+  font-weight: 400;
+  color: #2c1200;
+  margin-bottom: 14px;
 }
 
 .service-request-modal .quote-form .form-intro p {
-  color: #565656;
-  font-size: 1.25rem;
-  margin-bottom: 20px;
-  line-height: 1.5;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #5f6875;
+  max-width: 610px;
+  margin-bottom: 38px;
 }
 
 .service-request-modal .php-email-form .form-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px 16px;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px 24px;
 }
 
 .service-request-modal .php-email-form .form-field label {
-  font-size: 1rem;
-  font-weight: 700;
-  margin-bottom: 6px;
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
   color: #1e1e1e;
+  margin-bottom: 10px;
 }
 
 .service-request-modal .php-email-form input[type=text],
 .service-request-modal .php-email-form input[type=email],
 .service-request-modal .php-email-form input[type=tel],
 .service-request-modal .php-email-form select {
-  height: 52px;
-  border: 1px solid #d2d2d2;
-  border-radius: 8px;
-  background: #f3f3f3;
-  font-size: 1.05rem;
+  width: 100%;
+  height: 56px;
+  border: 1px solid #d9d9d9;
+  background: #fff;
+  border-radius: 0;
+  padding: 0 20px;
+  font-size: 16px;
   color: #333;
-  padding: 0 14px;
+  outline: none;
 }
 
 .service-request-modal .php-email-form input::placeholder {
-  color: #a4a4a4;
-}
-
-.service-request-modal .php-email-form select {
-  appearance: none;
-  background-image: linear-gradient(45deg, transparent 50%, #7a7a7a 50%), linear-gradient(135deg, #7a7a7a 50%, transparent 50%);
-  background-position: calc(100% - 28px) calc(50% - 4px), calc(100% - 22px) calc(50% - 4px);
-  background-size: 6px 6px, 6px 6px;
-  background-repeat: no-repeat;
+  color: #a2a2a2;
 }
 
 .service-request-modal .php-email-form .submit-btn {
-  margin-top: 18px;
-  width: 280px;
-  min-height: 56px;
-  background: #d99900;
-  border-radius: 8px;
-  display: inline-flex;
-  justify-content: center;
-  font-size: 1.25rem;
+  min-width: 215px;
+  height: 60px;
+  border: none;
+  background: #de9f12;
+  color: #fff;
+  font-size: 18px;
   font-weight: 700;
+  cursor: pointer;
+  padding: 0 32px;
+  margin-top: 42px;
+  border-radius: 0;
+}
+
+.service-request-modal .php-email-form .submit-btn:hover {
+  background: #c98e0f;
 }
 
 .service-request-modal .php-email-form .submit-btn i {
-  font-size: 1.25rem;
+  margin-left: 12px;
+  font-size: 22px;
 }
 
-@media (max-width: 1200px) {
-  .service-request-modal .modal-body.quote {
-    padding: 24px;
-  }
-
-  .service-request-modal .quote-form {
-    padding: 22px;
+@media (max-width: 1024px) {
+  .service-request-modal .quote-content p {
+    max-width: 100%;
   }
 }
 
 @media (max-width: 992px) {
   .service-request-modal .modal-body.quote {
-    padding: 22px;
+    padding: 28px 20px;
   }
 
-  .service-request-modal .quote-content {
-    padding: 0;
+  .service-request-modal .quote-form {
+    padding: 30px 20px 40px;
   }
 
+  .service-request-modal .quote-content h2 {
+    font-size: 34px;
+  }
+
+  .service-request-modal .quote-form .form-intro h3 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
   .service-request-modal .php-email-form .form-grid {
     grid-template-columns: 1fr;
-  }
-
-  .service-request-modal .php-email-form .submit-btn {
-    width: 100%;
   }
 }
 
