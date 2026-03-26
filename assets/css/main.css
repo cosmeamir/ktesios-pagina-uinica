@@ -1328,12 +1328,26 @@ section,
 }
 
 @media (max-width: 992px) {
+  .service-request-modal .modal-dialog {
+    margin: 0;
+    max-width: 100%;
+    min-height: 100vh;
+  }
+
+  .service-request-modal .modal-content {
+    min-height: 100vh;
+  }
+
   .service-request-modal .modal-body.quote {
     padding: 28px 20px;
   }
 
+  .service-request-modal .modal-contact-panel {
+    display: none;
+  }
+
   .service-request-modal .quote-form {
-    padding: 30px 20px 40px;
+    padding: 30px 18px 36px;
   }
 
   .service-request-modal .quote-content h2 {
@@ -1346,8 +1360,28 @@ section,
 }
 
 @media (max-width: 768px) {
+  .service-request-modal .btn-close {
+    top: 12px;
+    right: 12px;
+  }
+
   .service-request-modal .php-email-form .form-grid {
     grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .service-request-modal .quote-form .form-intro h3 {
+    font-size: 26px;
+  }
+
+  .service-request-modal .quote-form .form-intro p {
+    margin-bottom: 24px;
+  }
+
+  .service-request-modal .php-email-form .submit-btn {
+    width: 100%;
+    min-width: 0;
+    margin-top: 28px;
   }
 }
 
@@ -3640,6 +3674,10 @@ section,
 }
 
 @media (max-width: 992px) {
+  .quote .quote-contact-panel {
+    display: none;
+  }
+
   .quote .quote-content {
     padding: 40px 20px 60px;
     text-align: center;
@@ -3757,7 +3795,7 @@ section,
 @media (max-width: 992px) {
   .quote .quote-form {
     margin-left: 0;
-    margin-top: 40px;
+    margin-top: 0;
     padding: 40px 30px;
   }
 }
