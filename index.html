@@ -58,7 +58,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted d-none d-sm-block" href="quote.html">Pedido de Serviço</a>
+      <a class="btn-getstarted d-none d-sm-block service-modal-trigger" href="#" data-bs-toggle="modal" data-bs-target="#serviceRequestModal">Pedido de Serviço</a>
 
     </div>
   </header>
@@ -80,13 +80,27 @@
                 <img src="assets/img/logo_center.png" alt="Ktesios">
               </div>
               <p>Empresa especializada em Consultoria Estratégica e Avaliação de Activos Imobiliários, Equipamentos e de Empresas.</p>
-              <h1 data-aos="fade-up" data-aos-delay="200"></h1>
-             
-             
+              <h1 data-aos="fade-up" data-aos-delay="200">Soluções imobiliárias com rigor técnico e visão estratégica</h1>
 
-              
+              <div class="hero-actions" data-aos="fade-up" data-aos-delay="250">
+                <a href="#" class="btn btn-primary service-modal-trigger" data-bs-toggle="modal" data-bs-target="#serviceRequestModal">Pedido de Serviço</a>
+                <a href="#services" class="btn btn-secondary">Ver Serviços</a>
+              </div>
 
-              
+              <div class="hero-highlights" data-aos="fade-up" data-aos-delay="300">
+                <div class="highlight-item">
+                  <i class="bi bi-patch-check-fill"></i>
+                  <span>Conforme normas CMC, IVSC, RICS e TEGoVA</span>
+                </div>
+                <div class="highlight-item">
+                  <i class="bi bi-lightning-charge-fill"></i>
+                  <span>Resposta rápida para pedidos e consultas</span>
+                </div>
+                <div class="highlight-item">
+                  <i class="bi bi-people-fill"></i>
+                  <span>Equipa técnica experiente e multidisciplinar</span>
+                </div>
+              </div>
 
             </div>
           </div>
@@ -147,6 +161,46 @@
       </div>
 
     </section><!-- /Quem Somos Section -->
+
+    <!-- Valores Section -->
+    <section id="values" class="values section light-background">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Os Nossos Valores</h2>
+        <p>Princípios que orientam cada decisão e cada serviço que entregamos.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-4">
+
+          <div class="col-lg-4 col-md-6">
+            <article class="value-card" data-aos="fade-up" data-aos-delay="150">
+              <div class="value-icon"><i class="bi bi-compass"></i></div>
+              <h3>Independência</h3>
+              <p>A nossa independência é a melhor forma de servir os nossos clientes. Para garantir esta independência, seguimos políticas e procedimentos em conformidade com as melhores práticas de mercado.</p>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <article class="value-card" data-aos="fade-up" data-aos-delay="220">
+              <div class="value-icon"><i class="bi bi-shield-check"></i></div>
+              <h3>Integridade</h3>
+              <p>Os valores éticos orientam todas as nossas decisões. Regemo-nos por critérios claros e preservamos a nossa reputação.</p>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-12">
+            <article class="value-card" data-aos="fade-up" data-aos-delay="290">
+              <div class="value-icon"><i class="bi bi-people"></i></div>
+              <h3>Espírito de equipa</h3>
+              <p>Com uma vasta equipa multidisciplinar, promovemos um ambiente de cooperação e entreajuda, coordenado por especialistas que, ao combinar o conhecimento de cada um, nos permitem acrescentar valor.</p>
+            </article>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Valores Section -->
 
     <!-- Serviços Section -->
     <section id="services" class="services section light-background">
@@ -501,7 +555,7 @@ Qualificações Profissionais</p>
                  
 
                   <div class="action-buttons">
-                    <a href="quote.html" class="btn-primary">
+                    <a href="#" class="btn-primary service-modal-trigger" data-bs-toggle="modal" data-bs-target="#serviceRequestModal">
                       <span>Pedido de Serviço</span>
                       <i class="bi bi-arrow-right"></i>
                     </a>
@@ -537,7 +591,90 @@ Qualificações Profissionais</p>
 
     </section><!-- /Call To Action Section -->
 
-  </main>
+    </main>
+
+  <div class="modal fade service-request-modal" id="serviceRequestModal" tabindex="-1" aria-labelledby="serviceRequestModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title h5" id="serviceRequestModalLabel">Pedido de contacto / Serviço</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body quote">
+          <div class="quote-container modal-quote-container">
+            <div class="row g-4 align-items-stretch">
+              <div class="col-lg-5">
+                <div class="quote-content">
+                  <h2>Pedido de contacto / Serviço</h2>
+                  <p>A KTESIOS disponibiliza uma plataforma de gestão de processos e interface de comunicação com clientes e peritos.</p>
+                  <div class="contact-info">
+                    <div class="contact-detail">
+                      <i class="bi bi-telephone-fill"></i>
+                      <span>+244 924 867 792</span>
+                    </div>
+                    <div class="contact-detail">
+                      <i class="bi bi-envelope-fill"></i>
+                      <span>geral@ktesiosconsulting.com</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-7">
+                <div class="quote-form">
+                  <div class="form-intro">
+                    <h3>Faça o seu Pedido</h3>
+                    <p>Selecione o tipo de serviço e descreva a necessidade para análise da nossa equipa.</p>
+                  </div>
+
+                  <form action="forms/quote.php" method="post" class="php-email-form">
+                    <div class="form-grid">
+                      <div class="form-field">
+                        <label for="modal-fullname">Nome</label>
+                        <input type="text" name="name" id="modal-fullname" placeholder="Indique o seu nome" required>
+                      </div>
+
+                      <div class="form-field">
+                        <label for="modal-email">Email</label>
+                        <input type="email" name="email" id="modal-email" placeholder="seu.email@empresa.com" required>
+                      </div>
+
+                      <div class="form-field">
+                        <label for="modal-phone">Telefone</label>
+                        <input type="tel" name="phone" id="modal-phone" placeholder="+244 900 000 000" required>
+                      </div>
+
+                      <div class="form-field">
+                        <label for="modal-project-type">Tipo de Serviço</label>
+                        <select name="type" id="modal-project-type" required>
+                          <option value="">Selecione o serviço</option>
+                          <option value="custom-home">AVALIAÇÕES – AVALIAÇÃO IMOBILIÁRIA</option>
+                          <option value="commercial">CONSULTORIA</option>
+                          <option value="renovation">ANÁLISE</option>
+                          <option value="addition">DUE DILIGENCE</option>
+                          <option value="industrial">INSDUSTRIAL PROJETOS</option>
+                          <option value="consultation">FISCALIZAÇÃO E GESTÃO DE PROJECTOS</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Obrigado! O seu pedido foi recebido. A equipa KTESIOS entrará em contacto em breve.</div>
+
+                    <button type="submit" class="submit-btn">
+                      <span>Submeter Pedido</span>
+                      <i class="bi bi-arrow-right"></i>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <footer id="footer" class="footer dark-background">
 
